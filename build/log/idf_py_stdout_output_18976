@@ -1,0 +1,1003 @@
+e�J��ѹesp32: SPI Sp�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 22 2025 14:21:08[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=279dch (162268) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=00037a04 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0003b944 vaddr=40080000 size=046d4h ( 18132) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a27e8h (665576) map[0m
+[0;32mI (402) esp_image: segment 4: paddr=000e2810 vaddr=400846d4 size=13d14h ( 81172) load[0m
+[0;32mI (446) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (446) boot: Disabling RNG early entropy source...[0m
+[0;32mI (458) cpu_start: Multicore app[0m
+[0;32mI (467) cpu_start: Pro cpu start user code[0m
+[0;32mI (467) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (467) app_init: Application information:[0m
+[0;32mI (470) app_init: Project name:     uart_mqtt_bridge_component[0m
+[0;32mI (476) app_init: App version:      1[0m
+[0;32mI (481) app_init: Compile time:     Apr 22 2025 14:20:56[0m
+[0;32mI (487) app_init: ELF file SHA256:  828ea5710...[0m
+[0;32mI (492) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (497) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (501) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (506) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (512) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (519) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (525) heap_init: At 3FFB8800 len 00027800 (158 KiB): DRAM[0m
+[0;32mI (531) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (537) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (544) heap_init: At 400983E8 len 00007C18 (31 KiB): IRAM[0m
+[0;32mI (551) spi_flash: detected chip: generic[0m
+[0;32mI (554) spi_flash: flash io: dio[0m
+[0;33mW (558) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (572) main_task: Started on CPU0[0m
+[0;32mI (582) main_task: Calling app_main()[0m
+[0;32mI (582) MAIN_APP: [APP] Startup..[0m
+[0;32mI (582) MAIN_APP: [APP] Free memory: 276932 bytes[0m
+[0;32mI (582) MAIN_APP: [APP] IDF version: v5.3.1[0m
+[0;32mI (622) MAIN_APP: Creating LED Command Queue...[0m
+[0;32mI (622) MAIN_APP: Initializing LED Handler...[0m
+[0;32mI (622) LED_HANDLER: Initializing LED GPIO 2[0m
+[0;32mI (622) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (632) LED_HANDLER: LED control task started (GPIO 2).[0m
+[0;32mI (642) LED_HANDLER: LED handler initialized and task started.[0m
+[0;32mI (642) MAIN_APP: Initializing WiFi Component...[0m
+[0;32mI (652) WIFI_CONN: Initializing WiFi STA mode...[0m
+[0;32mI (672) wifi:wifi driver task: 3ffc12b4, prio:23, stack:6656, core=0[0m
+[0;32mI (682) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (682) wifi:wifi certification version: v7.0[0m
+[0;32mI (682) wifi:config NVS flash: enabled[0m
+[0;32mI (682) wifi:config nano formating: disabled[0m
+[0;32mI (692) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (692) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (702) wifi:Init management short buffer num: 32[0m
+[0;32mI (702) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (702) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (712) wifi:Init static rx buffer num: 10[0m
+[0;32mI (712) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (722) wifi_init: rx ba win: 6[0m
+[0;32mI (722) wifi_init: accept mbox: 6[0m
+[0;32mI (722) wifi_init: tcpip mbox: 32[0m
+[0;32mI (732) wifi_init: udp mbox: 6[0m
+[0;32mI (732) wifi_init: tcp mbox: 6[0m
+[0;32mI (742) wifi_init: tcp tx win: 5760[0m
+[0;32mI (742) wifi_init: tcp rx win: 5760[0m
+[0;32mI (742) wifi_init: tcp mss: 1440[0m
+[0;32mI (752) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (752) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (802) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;33mW (812) phy_init: failed to load RF calibration data (0xffffffff), falling back to full calibration[0m
+[0;33mW (882) phy_init: saving new calibration data because of checksum failure, mode(2)[0m
+[0;32mI (962) wifi:mode : sta (a8:42:e3:8f:b3:fc)[0m
+[0;32mI (962) wifi:enable tsf[0m
+[0;32mI (962) WIFI_CONN: WiFi STA initialization finished. Connection attempts starting.[0m
+[0;32mI (972) WIFI_CONN: WIFI_EVENT_STA_START received, attempting to connect...[0m
+[0;32mI (972) MAIN_APP: WiFi Connecting...[0m
+[0;32mI (982) MAIN_APP: Device MAC Address: A842E38FB3FC[0m
+[0;32mI (982) MAIN_APP: Initializing MQTT Component...[0m
+[0;32mI (992) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1002) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1002) MQTT_COMM: Initializing MQTT client...[0m
+[0;32mI (1002) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1012) MQTT_COMM: Using generated Client ID: ESP32_8FB3FC[0m
+[0;32mI (1012) MQTT_COMM: MQTT_EVENT_BEFORE_CONNECT[0m
+[0;31mE (1022) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;32mI (1032) wifi:state: assoc -> run (0x10)[0m
+[0;31mE (1032) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1042) mqtt_client: Error transport connect[0m
+[0;32mI (1032) MQTT_COMM: MQTT client initialization finished and started.[0m
+[0;32mI (1052) wifi:[0;31mE (1042) MQTT_COMM: MQTT_EVENT_ERROR[0m[0m
+connected with Nearloc.Private.Main, aid = 1, channel 1, 40U, bssid = 06:05:88:be:cd:e7[0;31mE (1062) MQTT_COMM: Last error code: 0x1[0m
+
+[0;31mE (1072) MQTT_COMM: Last error step: 0[0m
+[0;32mI (1072) wifi:[0;31mE (1072) MAIN_APP: MQTT Connection Error.[0m[0m
+security: WPA2-PSK, phy: bgn, rssi: -54
+[0;33mW (1082) MQTT_COMM: MQTT_EVENT_DISCONNECTED[0m
+[0;33mW (1092) MAIN_APP: MQTT Disconnected.[0m
+[0;32mI (1092) wifi:pm start, type: 1[0m
+
+[0;32mI (1102) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1102) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1052) MAIN_APP: Initializing UART Component...[0m
+[0;32mI (1112) UART_COMM: Initializing UART2 (TX:17, RX:16, Baud:115200)[0m
+[0;32mI (1122) UART_COMM: UART RX task started for UART2.[0m
+[0;32mI (1122) wifi:<ba-add>idx:0 (ifx:0, 06:05:88:be:cd:e7), tid:0, ssn:0, winSize:64[0m
+[0;32mI (1132) UART_COMM: UART2 initialized successfully.[0m
+[0;32mI (1142) MAIN_APP: Main task finished initialization. Components running.[0m
+[0;32mI (2612) esp_netif_handlers: sta ip: 10.6.4.197, mask: 255.255.255.0, gw: 10.6.4.1[0m
+[0;32mI (2612) WIFI_CONN: IP_EVENT_STA_GOT_IP received: 10.6.4.197[0m
+[0;32mI (2612) MAIN_APP: WiFi Connected. IP: 10.6.4.197[0m
+[0;32mI (11092) MQTT_COMM: MQTT_EVENT_BEFORE_CONNECT[0m
+[0;32mI (11522) MQTT_COMM: MQTT_EVENT_CONNECTED[0m
+[0;32mI (11532) MAIN_APP: MQTT Connected.[0m
+[0;32mI (11532) MAIN_APP: Subscribing to: sub/data/A842E38FB3FC[0m
+[0;32mI (11532) MQTT_COMM: Subscribe queued successfully for topic 'sub/data/A842E38FB3FC', msg_id=20064[0m
+[0;32mI (11662) MQTT_COMM: MQTT_EVENT_SUBSCRIBED, msg_id=20064[0m
+[0;32mI (31152) MAIN_APP: [APP] Free memory: 208376 bytes[0m
+[0;32mI (31152) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (31152) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (61152) MAIN_APP: [APP] Free memory: 208376 bytes[0m
+[0;32mI (61152) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (61152) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (91152) MAIN_APP: [APP] Free memory: 208376 bytes[0m
+[0;32mI (91152) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (91152) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (121152) MAIN_APP: [APP] Free memory: 208404 bytes[0m
+[0;32mI (121152) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (121152) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (151152) MAIN_APP: [APP] Free memory: 208404 bytes[0m
+[0;32mI (151152) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (151152) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (181152) MAIN_APP: [APP] Free memory: 208404 bytes[0m
+[0;32mI (181152) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (181152) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (211152) MAIN_APP: [APP] Free memory: 208404 bytes[0m
+[0;32mI (211152) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (211152) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (241152) MAIN_APP: [APP] Free memory: 208404 bytes[0m
+[0;32mI (241152) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (241152) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (271152) MAIN_APP: [APP] Free memory: 208404 bytes[0m
+[0;32mI (271152) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (271152) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (301152) MAIN_APP: [APP] Free memory: 208404 bytes[0m
+[0;32mI (301152) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (301152) MAIN_APP: [APP] WiFi Connected: Yes[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 22 2025 14:21:08[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=279dch (162268) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=00037a04 vaddr=3ffb0000 size=03f38h ( 16184) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0003b944 vaddr=40080000 size=046d4h ( 18132) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a27e8h (665576) map[0m
+[0;32mI (402) esp_image: segment 4: paddr=000e2810 vaddr=400846d4 size=13d14h ( 81172) load[0m
+[0;32mI (446) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (446) boot: Disabling RNG early entropy source...[0m
+[0;32mI (458) cpu_start: Multicore app[0m
+[0;32mI (467) cpu_start: Pro cpu start user code[0m
+[0;32mI (467) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (467) app_init: Application information:[0m
+[0;32mI (470) app_init: Project name:     uart_mqtt_bridge_component[0m
+[0;32mI (476) app_init: App version:      1[0m
+[0;32mI (481) app_init: Compile time:     Apr 22 2025 14:20:56[0m
+[0;32mI (487) app_init: ELF file SHA256:  828ea5710...[0m
+[0;32mI (492) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (497) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (501) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (506) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (511) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (519) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (524) heap_init: At 3FFB8800 len 00027800 (158 KiB): DRAM[0m
+[0;32mI (531) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (537) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (544) heap_init: At 400983E8 len 00007C18 (31 KiB): IRAM[0m
+[0;32mI (551) spi_flash: detected chip: generic[0m
+[0;32mI (554) spi_flash: flash io: dio[0m
+[0;33mW (558) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (572) main_task: Started on CPU0[0m
+[0;32mI (582) main_task: Calling app_main()[0m
+[0;32mI (582) MAIN_APP: [APP] Startup..[0m
+[0;32mI (582) MAIN_APP: [APP] Free memory: 276932 bytes[0m
+[0;32mI (582) MAIN_APP: [APP] IDF version: v5.3.1[0m
+[0;32mI (622) MAIN_APP: Creating LED Command Queue...[0m
+[0;32mI (622) MAIN_APP: Initializing LED Handler...[0m
+[0;32mI (622) LED_HANDLER: Initializing LED GPIO 2[0m
+[0;32mI (622) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (632) LED_HANDLER: LED control task started (GPIO 2).[0m
+[0;32mI (642) LED_HANDLER: LED handler initialized and task started.[0m
+[0;32mI (642) MAIN_APP: Initializing WiFi Component...[0m
+[0;32mI (652) WIFI_CONN: Initializing WiFi STA mode...[0m
+[0;32mI (672) wifi:wifi driver task: 3ffc12b4, prio:23, stack:6656, core=0[0m
+[0;32mI (682) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (682) wifi:wifi certification version: v7.0[0m
+[0;32mI (682) wifi:config NVS flash: enabled[0m
+[0;32mI (682) wifi:config nano formating: disabled[0m
+[0;32mI (692) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (692) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (702) wifi:Init management short buffer num: 32[0m
+[0;32mI (702) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (712) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (712) wifi:Init static rx buffer num: 10[0m
+[0;32mI (712) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (722) wifi_init: rx ba win: 6[0m
+[0;32mI (722) wifi_init: accept mbox: 6[0m
+[0;32mI (722) wifi_init: tcpip mbox: 32[0m
+[0;32mI (732) wifi_init: udp mbox: 6[0m
+[0;32mI (732) wifi_init: tcp mbox: 6[0m
+[0;32mI (742) wifi_init: tcp tx win: 5760[0m
+[0;32mI (742) wifi_init: tcp rx win: 5760[0m
+[0;32mI (742) wifi_init: tcp mss: 1440[0m
+[0;32mI (752) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (752) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (762) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;33mW (852) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;32mI (942) wifi:mode : sta (a8:42:e3:8f:b3:fc)[0m
+[0;32mI (942) wifi:enable tsf[0m
+[0;32mI (942) WIFI_CONN: WiFi STA initialization finished. Connection attempts starting.[0m
+[0;32mI (942) WIFI_CONN: WIFI_EVENT_STA_START received, attempting to connect...[0m
+[0;32mI (952) MAIN_APP: WiFi Connecting...[0m
+[0;32mI (952) MAIN_APP: Device MAC Address: A842E38FB3FC[0m
+[0;32mI (962) MAIN_APP: Initializing MQTT Component...[0m
+[0;32mI (962) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (972) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (982) MQTT_COMM: Initializing MQTT client...[0m
+[0;32mI (982) MQTT_COMM: Using generated Client ID: ESP32_8FB3FC[0m
+[0;32mI (982) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (992) MQTT_COMM: MQTT_EVENT_BEFORE_CONNECT[0m
+[0;31mE (992) esp-tls: couldn't get hostname for :mqtt.eclipseprojects.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1002) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1012) mqtt_client: Error transport connect[0m
+[0;31mE (1022) MQTT_COMM: MQTT_EVENT_ERROR[0m
+[0;31mE (1022) MQTT_COMM: Last error code: 0x1[0m
+[0;31mE (1022) MQTT_COMM: Last error step: 0[0m
+[0;31mE (1032) MAIN_APP: MQTT Connection Error.[0m
+[0;33mW (1032) MQTT_COMM: MQTT_EVENT_DISCONNECTED[0m
+[0;33mW (1042) MAIN_APP: MQTT Disconnected.[0m
+[0;32mI (1002) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1052) MQTT_COMM: MQTT client initialization finished and started.[0m
+[0;32mI (1052) MAIN_APP: Initializing UART Component...[0m
+[0;32mI (1062) wifi:connected with Nearloc.Private.Main, aid = 1, channel 1, 40U, bssid = 06:05:88:be:cd:e7[0m
+[0;32mI (1072) wifi:security: WPA2-PSK, phy: bgn, rssi: -53[0m
+[0;32mI (1082) wifi:pm start, type: 1[0m
+
+[0;32mI (1082) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1082) UART_COMM: Initializing UART2 (TX:17, RX:16, Baud:115200)[0m
+[0;32mI (1092) UART_COMM: UART RX task started for UART2.[0m
+[0;32mI (1102) UART_COMM: UART2 initialized successfully.[0m
+[0;32mI (1102) wifi:<ba-add>idx:0 (ifx:0, 06:05:88:be:cd:e7), tid:0, ssn:0, winSize:64[0m
+[0;32mI (1112) MAIN_APP: Main task finished initialization. Components running.[0m
+[0;32mI (1142) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (2592) esp_netif_handlers: sta ip: 10.6.4.197, mask: 255.255.255.0, gw: 10.6.4.1[0m
+[0;32mI (2592) WIFI_CONN: IP_EVENT_STA_GOT_IP received: 10.6.4.197[0m
+[0;32mI (2592) MAIN_APP: WiFi Connected. IP: 10.6.4.197[0m
+[0;32mI (11052) MQTT_COMM: MQTT_EVENT_BEFORE_CONNECT[0m
+[0;32mI (11482) MQTT_COMM: MQTT_EVENT_CONNECTED[0m
+[0;32mI (11482) MAIN_APP: MQTT Connected.[0m
+[0;32mI (11482) MAIN_APP: Subscribing to: sub/data/A842E38FB3FC[0m
+[0;32mI (11482) MQTT_COMM: Subscribe queued successfully for topic 'sub/data/A842E38FB3FC', msg_id=63748[0m
+[0;32mI (11682) MQTT_COMM: MQTT_EVENT_SUBSCRIBED, msg_id=63748[0m
+[0;32mI (31122) MAIN_APP: [APP] Free memory: 208368 bytes[0m
+[0;32mI (31122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (31122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (61122) MAIN_APP: [APP] Free memory: 208372 bytes[0m
+[0;32mI (61122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (61122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (63872) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (63872) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='asd_xyz'[0m
+[0;32mI (63872) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (63882) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (66742) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (66742) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='asd_xyz'[0m
+[0;32mI (66742) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (66752) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (75642) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (75642) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='asd_xyz'[0m
+[0;32mI (75642) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (75652) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (77072) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (77072) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='asd_xyz'[0m
+[0;32mI (77072) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (77082) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (85982) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (85982) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='asd_xyz'[0m
+[0;32mI (85982) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (85992) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (91122) MAIN_APP: [APP] Free memory: 208372 bytes[0m
+[0;32mI (91122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (91122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (98042) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (98042) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='asd_xyz'[0m
+[0;32mI (98042) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (98052) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (98262) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (98262) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='asd_xyz'[0m
+[0;32mI (98262) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (98272) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (98272) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (98272) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='asd_xyz'[0m
+[0;32mI (98282) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (98292) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (98302) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (98302) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='asd_xyz'[0m
+[0;32mI (98312) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (98312) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (98322) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (98322) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='asd_xyz'[0m
+[0;32mI (98332) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (98342) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (98342) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (98342) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='asd_xyz'[0m
+[0;32mI (98352) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (98362) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (121122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (121122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (121122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (146252) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (146252) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='asd_xyz'[0m
+[0;32mI (146252) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (146262) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (151122) MAIN_APP: [APP] Free memory: 208392 bytes[0m
+[0;32mI (151122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (151122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (172042) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (172042) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='asd_xyz'[0m
+[0;32mI (172042) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (172052) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (172962) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (172962) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='asd_xyz'[0m
+[0;32mI (172962) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (172972) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (174192) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (174192) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='asd_xyz'[0m
+[0;32mI (174192) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (174202) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (175002) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (175012) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='asd_xyz'[0m
+[0;32mI (175012) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (175012) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (175932) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (175932) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='asd_xyz'[0m
+[0;32mI (175932) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (175942) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (176742) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (176752) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='asd_xyz'[0m
+[0;32mI (176752) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (176752) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (177462) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (177462) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='asd_xyz'[0m
+[0;32mI (177462) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (177472) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (178282) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (178282) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='asd_xyz'[0m
+[0;32mI (178282) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (178292) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (179202) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (179202) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='asd_xyz'[0m
+[0;32mI (179202) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (179212) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (180122) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (180122) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='asd_xyz'[0m
+[0;32mI (180122) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (180132) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (181122) MAIN_APP: [APP] Free memory: 208388 bytes[0m
+[0;32mI (181122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (181122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (182172) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (182172) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='asd_xyz'[0m
+[0;32mI (182172) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (182182) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (182892) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (182892) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='asd_xyz'[0m
+[0;32mI (182892) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (182902) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (183602) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (183602) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='asd_xyz'[0m
+[0;32mI (183602) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (183612) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (184322) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (184322) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='asd_xyz'[0m
+[0;32mI (184322) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (184332) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (185342) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (185342) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='asd_xyz'[0m
+[0;32mI (185342) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (185352) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (186062) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (186062) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='asd_xyz'[0m
+[0;32mI (186062) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (186072) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (188002) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (188002) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='asd_xyz'[0m
+[0;32mI (188002) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (188012) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (188922) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (188922) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='asd_xyz'[0m
+[0;32mI (188922) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (188932) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (205812) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (205812) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='asd_xyz'[0m
+[0;32mI (205812) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (205822) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (211122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (211122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (211122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (241122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (241122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (241122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (271122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (271122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (271122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (275092) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (275092) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='asd_xyz'[0m
+[0;32mI (275092) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (275102) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (277032) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (277032) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='asd_xyz'[0m
+[0;32mI (277032) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (277042) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (279282) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (279292) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='asd_xyz'[0m
+[0;32mI (279292) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (279292) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (281022) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (281022) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='asd_xyz'[0m
+[0;32mI (281022) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (281032) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (290542) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (290542) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='Ali Yılbaşı'[0m
+[0;32mI (290552) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (290552) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (298732) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (298732) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='Ali Yilbasi'[0m
+[0;32mI (298732) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (298742) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (299952) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (299952) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='Ali Yilbasi'[0m
+[0;32mI (299962) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (299962) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (300772) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (300772) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='Ali Yilbasi'[0m
+[0;32mI (300772) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (300782) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (301122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (301122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (301122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (301592) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (301592) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='Ali Yilbasi'[0m
+[0;32mI (301592) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (301602) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (302202) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (302212) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='Ali Yilbasi'[0m
+[0;32mI (302212) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (302212) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (303532) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (303542) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='Ali Yilbasi'[0m
+[0;32mI (303542) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (303542) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (304252) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (304252) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='Ali Yilbasi'[0m
+[0;32mI (304252) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (304262) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (331122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (331122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (331122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (361122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (361122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (361122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (391122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (391122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (391122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (421122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (421122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (421122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (451122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (451122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (451122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (481122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (481122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (481122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (511122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (511122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (511122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (541122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (541122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (541122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (571122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (571122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (571122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (601122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (601122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (601122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (622402) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (622402) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='Ali Yilbasi'[0m
+[0;32mI (622412) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (622412) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (623742) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (623742) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='Ali Yilbasi'[0m
+[0;32mI (623742) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (623752) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (624762) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (624762) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='Ali Yilbasi'[0m
+[0;32mI (624762) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (624772) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (625992) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (625992) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='Ali Yilbasi'[0m
+[0;32mI (625992) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (626002) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (627112) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (627112) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='Ali Yilbasi'[0m
+[0;32mI (627112) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (627122) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (628442) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (628442) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='Ali Yilbasi'[0m
+[0;32mI (628452) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (628452) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (629462) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (629472) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='Ali Yilbasi'[0m
+[0;32mI (629472) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (629472) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (630592) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (630592) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='Ali Yilbasi'[0m
+[0;32mI (630592) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (630602) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (631122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (631122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (631122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (631722) MQTT_COMM: MQTT_EVENT_DATA[0m
+[0;32mI (631722) MAIN_APP: MQTT RX Callback: Topic='sub/data/A842E38FB3FC', Data='Ali Yilbasi'[0m
+[0;32mI (631722) MAIN_APP: Received data on subscribed topic.[0m
+[0;32mI (631732) MAIN_APP: Sent MQTT data to UART.[0m
+[0;32mI (661122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (661122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (661122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (691122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (691122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (691122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (721122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (721122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (721122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (751122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (751122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (751122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (781122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (781122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (781122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (811122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (811122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (811122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (841122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (841122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (841122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (871122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (871122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (871122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (901122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (901122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (901122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (931122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (931122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (931122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (961122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (961122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (961122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (991122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (991122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (991122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (1021122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (1021122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (1021122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (1051122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (1051122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (1051122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (1081122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (1081122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (1081122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (1111122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (1111122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (1111122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (1141122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (1141122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (1141122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (1171122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (1171122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (1171122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (1201122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (1201122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (1201122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (1231122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (1231122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (1231122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (1261122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (1261122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (1261122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (1291122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (1291122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (1291122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (1321122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (1321122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (1321122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (1351122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (1351122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (1351122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (1381122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (1381122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (1381122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (1411122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (1411122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (1411122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (1441122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (1441122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (1441122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (1471122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (1471122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (1471122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (1501122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (1501122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (1501122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (1531122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (1531122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (1531122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (1561122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (1561122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (1561122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (1591122) MAIN_APP: [APP] Free memory: 206844 bytes[0m
+[0;32mI (1591122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (1591122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (1621122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (1621122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (1621122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (1651122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (1651122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (1651122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (1681122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (1681122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (1681122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (1711122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (1711122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (1711122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (1741122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (1741122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (1741122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (1771122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (1771122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (1771122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (1801122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (1801122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (1801122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (1831122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (1831122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (1831122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (1861122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (1861122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (1861122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (1891122) MAIN_APP: [APP] Free memory: 208400 bytes[0m
+[0;32mI (1891122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (1891122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (1894592) MAIN_APP: UART RX Callback: Received 31 bytes[0m
+[0;32mI (1894592) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'xyz'[0m
+[0;32mI (1894592) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (1894812) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=37961[0m
+[0;32mI (1897692) MAIN_APP: UART RX Callback: Received 31 bytes[0m
+[0;32mI (1897692) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'xyz'[0m
+[0;32mI (1897692) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (1897882) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=27323[0m
+[0;32mI (1901692) MAIN_APP: UART RX Callback: Received 31 bytes[0m
+[0;32mI (1901692) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'xyz'[0m
+[0;32mI (1901692) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (1901872) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=20149[0m
+[0;32mI (1905102) MAIN_APP: UART RX Callback: Received 31 bytes[0m
+[0;32mI (1905102) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'xyz'[0m
+[0;32mI (1905102) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (1905252) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=47717[0m
+[0;32mI (1907712) MAIN_APP: UART RX Callback: Received 31 bytes[0m
+[0;32mI (1907712) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'xyz'[0m
+[0;32mI (1907712) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (1907912) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=49724[0m
+[0;32mI (1921122) MAIN_APP: [APP] Free memory: 208256 bytes[0m
+[0;32mI (1921122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (1921122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (1933572) MAIN_APP: UART RX Callback: Received 31 bytes[0m
+[0;32mI (1933572) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'xyz'[0m
+[0;32mI (1933572) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (1933802) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=62630[0m
+[0;32mI (1940172) MAIN_APP: UART RX Callback: Received 31 bytes[0m
+[0;32mI (1940172) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'xyz'[0m
+[0;32mI (1940172) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (1940352) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=49164[0m
+[0;32mI (1951122) MAIN_APP: [APP] Free memory: 208244 bytes[0m
+[0;32mI (1951122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (1951122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (1973562) MAIN_APP: UART RX Callback: Received 31 bytes[0m
+[0;32mI (1973562) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'xyz'[0m
+[0;32mI (1973562) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (1973912) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=64099[0m
+[0;32mI (1974972) MAIN_APP: UART RX Callback: Received 31 bytes[0m
+[0;32mI (1974972) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'xyz'[0m
+[0;32mI (1974972) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (1975692) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=24822[0m
+[0;32mI (1975962) MAIN_APP: UART RX Callback: Received 31 bytes[0m
+[0;32mI (1975962) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'xyz'[0m
+[0;32mI (1975962) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (1976272) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=5558[0m
+[0;32mI (1976912) MAIN_APP: UART RX Callback: Received 31 bytes[0m
+[0;32mI (1976912) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'xyz'[0m
+[0;32mI (1976912) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (1977092) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=4001[0m
+[0;32mI (1978122) MAIN_APP: UART RX Callback: Received 31 bytes[0m
+[0;32mI (1978122) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'xyz'[0m
+[0;32mI (1978122) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (1978312) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=25800[0m
+[0;32mI (1981122) MAIN_APP: [APP] Free memory: 208244 bytes[0m
+[0;32mI (1981122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (1981122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (1991732) MAIN_APP: UART RX Callback: Received 39 bytes[0m
+[0;32mI (1991732) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'Ali Yilbasi'[0m
+[0;32mI (1991732) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (1991932) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=56023[0m
+[0;32mI (1993902) MAIN_APP: UART RX Callback: Received 39 bytes[0m
+[0;32mI (1993902) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'Ali Yilbasi'[0m
+[0;32mI (1993902) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (1994072) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=20743[0m
+[0;32mI (1995262) MAIN_APP: UART RX Callback: Received 39 bytes[0m
+[0;32mI (1995262) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'Ali Yilbasi'[0m
+[0;32mI (1995262) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (1995512) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=20932[0m
+[0;32mI (1996522) MAIN_APP: UART RX Callback: Received 39 bytes[0m
+[0;32mI (1996522) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'Ali Yilbasi'[0m
+[0;32mI (1996522) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (1996732) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=56459[0m
+[0;32mI (2011122) MAIN_APP: [APP] Free memory: 208244 bytes[0m
+[0;32mI (2011122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (2011122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (2030342) MAIN_APP: UART RX Callback: Received 35 bytes[0m
+[0;32mI (2030342) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'Malatya'[0m
+[0;32mI (2030342) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (2030512) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=17502[0m
+[0;32mI (2041122) MAIN_APP: [APP] Free memory: 208244 bytes[0m
+[0;32mI (2041122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (2041122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (2054392) MAIN_APP: UART RX Callback: Received 35 bytes[0m
+[0;32mI (2054392) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'Malatya'[0m
+[0;32mI (2054392) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (2054552) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=10061[0m
+[0;32mI (2055702) MAIN_APP: UART RX Callback: Received 35 bytes[0m
+[0;32mI (2055702) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'Malatya'[0m
+[0;32mI (2055702) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (2055882) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=2600[0m
+[0;32mI (2056852) MAIN_APP: UART RX Callback: Received 35 bytes[0m
+[0;32mI (2056852) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'Malatya'[0m
+[0;32mI (2056852) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (2057012) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=60296[0m
+[0;32mI (2058032) MAIN_APP: UART RX Callback: Received 35 bytes[0m
+[0;32mI (2058032) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'Malatya'[0m
+[0;32mI (2058032) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (2058242) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=30198[0m
+[0;32mI (2059202) MAIN_APP: UART RX Callback: Received 35 bytes[0m
+[0;32mI (2059202) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'Malatya'[0m
+[0;32mI (2059202) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (2059362) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=43992[0m
+[0;32mI (2060282) MAIN_APP: UART RX Callback: Received 35 bytes[0m
+[0;32mI (2060282) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'Malatya'[0m
+[0;32mI (2060282) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (2060492) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=42897[0m
+[0;32mI (2061302) MAIN_APP: UART RX Callback: Received 35 bytes[0m
+[0;32mI (2061302) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'Malatya'[0m
+[0;32mI (2061302) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (2061512) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=7395[0m
+[0;32mI (2062482) MAIN_APP: UART RX Callback: Received 35 bytes[0m
+[0;32mI (2062482) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'Malatya'[0m
+[0;32mI (2062482) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (2062642) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=18342[0m
+[0;32mI (2068432) MAIN_APP: UART RX Callback: Received 35 bytes[0m
+[0;32mI (2068432) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'Malatya'[0m
+[0;32mI (2068432) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (2068572) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=42897[0m
+[0;32mI (2069892) MAIN_APP: UART RX Callback: Received 35 bytes[0m
+[0;32mI (2069892) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'Malatya'[0m
+[0;32mI (2069892) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (2070112) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=53111[0m
+[0;32mI (2071122) MAIN_APP: [APP] Free memory: 208244 bytes[0m
+[0;32mI (2071122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (2071122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (2073122) MAIN_APP: UART RX Callback: Received 35 bytes[0m
+[0;32mI (2073122) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'Malatya'[0m
+[0;32mI (2073122) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (2073282) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=64102[0m
+[0;32mI (2075432) MAIN_APP: UART RX Callback: Received 35 bytes[0m
+[0;32mI (2075432) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'Malatya'[0m
+[0;32mI (2075432) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (2075632) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=38928[0m
+[0;32mI (2077792) MAIN_APP: UART RX Callback: Received 35 bytes[0m
+[0;32mI (2077792) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'Malatya'[0m
+[0;32mI (2077792) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (2077992) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=9678[0m
+[0;32mI (2079092) MAIN_APP: UART RX Callback: Received 35 bytes[0m
+[0;32mI (2079092) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'Malatya'[0m
+[0;32mI (2079092) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (2079322) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=7514[0m
+[0;32mI (2080772) MAIN_APP: UART RX Callback: Received 35 bytes[0m
+[0;32mI (2080772) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'Malatya'[0m
+[0;32mI (2080772) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (2080962) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=64085[0m
+[0;32mI (2083352) MAIN_APP: UART RX Callback: Received 35 bytes[0m
+[0;32mI (2083352) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'Malatya'[0m
+[0;32mI (2083352) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (2083512) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=9716[0m
+[0;32mI (2101122) MAIN_APP: [APP] Free memory: 208244 bytes[0m
+[0;32mI (2101122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (2101122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (2109442) MAIN_APP: UART RX Callback: Received 35 bytes[0m
+[0;32mI (2109442) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'Malatya'[0m
+[0;32mI (2109442) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (2109612) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=26085[0m
+[0;32mI (2111812) MAIN_APP: UART RX Callback: Received 35 bytes[0m
+[0;32mI (2111812) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'Malatya'[0m
+[0;32mI (2111812) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (2111972) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=4474[0m
+[0;32mI (2113332) MAIN_APP: UART RX Callback: Received 35 bytes[0m
+[0;32mI (2113332) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'Malatya'[0m
+[0;32mI (2113332) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (2113502) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=45279[0m
+[0;32mI (2114332) MAIN_APP: UART RX Callback: Received 35 bytes[0m
+[0;32mI (2114332) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'Malatya'[0m
+[0;32mI (2114332) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (2114522) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=43222[0m
+[0;32mI (2115262) MAIN_APP: UART RX Callback: Received 35 bytes[0m
+[0;32mI (2115262) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'Malatya'[0m
+[0;32mI (2115262) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (2115442) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=35561[0m
+[0;32mI (2117272) MAIN_APP: UART RX Callback: Received 35 bytes[0m
+[0;32mI (2117272) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'Malatya'[0m
+[0;32mI (2117272) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (2117492) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=43570[0m
+[0;32mI (2118752) MAIN_APP: UART RX Callback: Received 35 bytes[0m
+[0;32mI (2118752) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'Malatya'[0m
+[0;32mI (2118752) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (2118922) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=13362[0m
+[0;32mI (2121732) MAIN_APP: UART RX Callback: Received 35 bytes[0m
+[0;32mI (2121732) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'Malatya'[0m
+[0;32mI (2121732) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (2121892) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=28844[0m
+[0;32mI (2124082) MAIN_APP: UART RX Callback: Received 35 bytes[0m
+[0;32mI (2124082) MAIN_APP: Parsed UART JSON - Topic: 'pub/data/asd', Payload: 'Malatya'[0m
+[0;32mI (2124082) MAIN_APP: Message queued for MQTT publish.[0m
+[0;32mI (2124242) MQTT_COMM: MQTT_EVENT_PUBLISHED, msg_id=38204[0m
+[0;32mI (2131122) MAIN_APP: [APP] Free memory: 208244 bytes[0m
+[0;32mI (2131122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (2131122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (2161122) MAIN_APP: [APP] Free memory: 208244 bytes[0m
+[0;32mI (2161122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (2161122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (2191122) MAIN_APP: [APP] Free memory: 208244 bytes[0m
+[0;32mI (2191122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (2191122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (2221122) MAIN_APP: [APP] Free memory: 208244 bytes[0m
+[0;32mI (2221122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (2221122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (2251122) MAIN_APP: [APP] Free memory: 208244 bytes[0m
+[0;32mI (2251122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (2251122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (2281122) MAIN_APP: [APP] Free memory: 208244 bytes[0m
+[0;32mI (2281122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (2281122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (2311122) MAIN_APP: [APP] Free memory: 208244 bytes[0m
+[0;32mI (2311122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (2311122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (2341122) MAIN_APP: [APP] Free memory: 208256 bytes[0m
+[0;32mI (2341122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (2341122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (2371122) MAIN_APP: [APP] Free memory: 208256 bytes[0m
+[0;32mI (2371122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (2371122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (2401122) MAIN_APP: [APP] Free memory: 208256 bytes[0m
+[0;32mI (2401122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (2401122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (2431122) MAIN_APP: [APP] Free memory: 208256 bytes[0m
+[0;32mI (2431122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (2431122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (2461122) MAIN_APP: [APP] Free memory: 208256 bytes[0m
+[0;32mI (2461122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (2461122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (2491122) MAIN_APP: [APP] Free memory: 208256 bytes[0m
+[0;32mI (2491122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (2491122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (2521122) MAIN_APP: [APP] Free memory: 208256 bytes[0m
+[0;32mI (2521122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (2521122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (2551122) MAIN_APP: [APP] Free memory: 208256 bytes[0m
+[0;32mI (2551122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (2551122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (2581122) MAIN_APP: [APP] Free memory: 208256 bytes[0m
+[0;32mI (2581122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (2581122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (2611122) MAIN_APP: [APP] Free memory: 208256 bytes[0m
+[0;32mI (2611122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (2611122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (2641122) MAIN_APP: [APP] Free memory: 208256 bytes[0m
+[0;32mI (2641122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (2641122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (2671122) MAIN_APP: [APP] Free memory: 208256 bytes[0m
+[0;32mI (2671122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (2671122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (2701122) MAIN_APP: [APP] Free memory: 208256 bytes[0m
+[0;32mI (2701122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (2701122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (2731122) MAIN_APP: [APP] Free memory: 208256 bytes[0m
+[0;32mI (2731122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (2731122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (2761122) MAIN_APP: [APP] Free memory: 208256 bytes[0m
+[0;32mI (2761122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (2761122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (2791122) MAIN_APP: [APP] Free memory: 208256 bytes[0m
+[0;32mI (2791122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (2791122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (2821122) MAIN_APP: [APP] Free memory: 208256 bytes[0m
+[0;32mI (2821122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (2821122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (2851122) MAIN_APP: [APP] Free memory: 208256 bytes[0m
+[0;32mI (2851122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (2851122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (2881122) MAIN_APP: [APP] Free memory: 208256 bytes[0m
+[0;32mI (2881122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (2881122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (2911122) MAIN_APP: [APP] Free memory: 208256 bytes[0m
+[0;32mI (2911122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (2911122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (2941122) MAIN_APP: [APP] Free memory: 208256 bytes[0m
+[0;32mI (2941122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (2941122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (2971122) MAIN_APP: [APP] Free memory: 208256 bytes[0m
+[0;32mI (2971122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (2971122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (3001122) MAIN_APP: [APP] Free memory: 208256 bytes[0m
+[0;32mI (3001122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (3001122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (3031122) MAIN_APP: [APP] Free memory: 208256 bytes[0m
+[0;32mI (3031122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (3031122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (3061122) MAIN_APP: [APP] Free memory: 208256 bytes[0m
+[0;32mI (3061122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (3061122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (3091122) MAIN_APP: [APP] Free memory: 208256 bytes[0m
+[0;32mI (3091122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (3091122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (3121122) MAIN_APP: [APP] Free memory: 208256 bytes[0m
+[0;32mI (3121122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (3121122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (3151122) MAIN_APP: [APP] Free memory: 208256 bytes[0m
+[0;32mI (3151122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (3151122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (3181122) MAIN_APP: [APP] Free memory: 208256 bytes[0m
+[0;32mI (3181122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (3181122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (3211122) MAIN_APP: [APP] Free memory: 208256 bytes[0m
+[0;32mI (3211122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (3211122) MAIN_APP: [APP] WiFi Connected: Yes[0m
+[0;32mI (3241122) MAIN_APP: [APP] Free memory: 208256 bytes[0m
+[0;32mI (3241122) MAIN_APP: [APP] MQTT Connected: Yes[0m
+[0;32mI (3241122) MAIN_A
